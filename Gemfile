@@ -10,9 +10,13 @@ gem 'bootstrap-will_paginate', '0.0.6'
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'guard-spork', '1.2.0'
+  gem 'spork', '0.9.2'
   gem 'guard-rspec', '1.2.1'
-  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard', '1.5.3'
+  gem 'rb-fsevent', '0.9.3'
   gem 'annotate', '2.5.0'
+  gem 'childprocess', '0.3.6'
 end
 
 # Gems used only for assets and not required
@@ -27,8 +31,6 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'guard-spork', '1.2.0'
-  gem 'spork', '0.9.2'
   gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
